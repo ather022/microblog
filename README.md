@@ -1,3 +1,9 @@
+# Ruby on Rails sample application!
+# This was made during the third screencast
+
+How super rad.
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
