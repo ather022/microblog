@@ -1,5 +1,5 @@
 # Ruby on Rails sample application!
-# This was made during the third screencast
++ This was made during the third screencast
 
 How super rad.
 
