@@ -31,10 +31,11 @@ gem 'jbuilder', '~> 1.2'
 
 #gem 'rails_12factor' #added based on stackoverflow suggestion
 
-group :development do
+group :development, :test do
   #gem 'pg'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'capybara'
 end
 
 group :production do    #from https://devcenter.heroku.com/articles/getting-started-with-rails4

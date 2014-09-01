@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title> <%= yield(:title) %> </title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= yield %>
+    <p>
+      <a href="/static_pages/home"> Home </a>
+    </p>
+    <p>
+      <a href="/static_pages/about"> About </a>
+    </p>
+    <p>
+      <a href="/static_pages/help"> Help </a>
+    </p>
+    <p>
+      <a href="/static_pages/contact"> Contact </a>
+    </p>
+  </body>
 </html>
