@@ -8,6 +8,8 @@ How super rad.
 The text below is a _template_, and is unlikely to be of any help whatsoever... checking out the Gemfile is probably your best bet for now :) hooray, __Ruby!__
 
 
+>...___Also!___ I like practicing ##markdown! Thanks a lot [Daring Fireball](https://daringfireball.net/projects/markdown/basics)!
+
 == README ==
 
 This README would normally document whatever steps are necessary to get the
@@ -17,9 +19,9 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
++ System dependencies
 
-* Configuration
+- Configuration
 
 * Database creation
 
