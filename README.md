@@ -1,10 +1,11 @@
 # A Ruby on Rails sample application!
-+ This was built with the help of Michael Hartl, and will evolve into something awesome... eventually.
++ This was built with the help of Michael Hartl, and will evolve into something awesome... *eventually*.
 
 How super rad.
+--------------
 
 
-The text below is a template, and is unlikely to be of any help whatsoever... checking out the Gemfile is probably your best bet for now :) hooray, Ruby!
+The text below is a _template_, and is unlikely to be of any help whatsoever... checking out the Gemfile is probably your best bet for now :) hooray, __Ruby!__
 
 
 == README ==
