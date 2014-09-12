@@ -1,10 +1,13 @@
-# Ruby on Rails sample application!
-+ This was made during the third screencast
+# A Ruby on Rails sample application!
++ This was built with the help of Michael Hartl, and will evolve into something awesome... eventually.
 
 How super rad.
 
 
-== README
+The text below is a template, and is unlikely to be of any help whatsoever... checking out the Gemfile is probably your best bet for now :) hooray, Ruby!
+
+
+== README ==
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
