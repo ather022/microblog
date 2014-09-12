@@ -7,7 +7,7 @@ How super rad.
 
 The text below is a _template_, and is unlikely to be of any help whatsoever... checking out the Gemfile is probably your best bet for now :) hooray, __Ruby!__
 
-#markdown
+##markdown
 
 >...___Also!___ I like practicing __markdown__! Thanks a lot [Daring Fireball](https://daringfireball.net/projects/markdown/basics)!
 
