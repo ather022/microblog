@@ -9,7 +9,7 @@ The text below is a _template_, and is unlikely to be of any help whatsoever... 
 
 ##markdown
 
->...___Also!___ I like practicing #markdown! Thanks a lot [Daring Fireball](https://daringfireball.net/projects/markdown/basics)!
+>...___Also!___ I like practicing =markdown=! Thanks a lot [Daring Fireball](https://daringfireball.net/projects/markdown/basics)!
 
 == README ==
 
