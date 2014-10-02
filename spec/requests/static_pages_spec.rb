@@ -47,4 +47,20 @@ RSpec.describe "Static pages", :type => :request do
     click_link "TwEAter"
     expect(page).to have_selector('h1', text: 'Welcome to TwEAter :)')
   end
+
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "About"
+    expect(page).to have_title('About Us')
+    click_link "Help"
+    expect(page).to have_title('Help')
+    click_link "Contact"
+    expect(page).to have_title('Contact')
+    click_link "Home"
+    click_link "Git yerself an account!"
+    expect(page).to have_title('Sign up!')
+  end
+
+
+
 end
