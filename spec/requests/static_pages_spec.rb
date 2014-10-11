@@ -3,58 +3,60 @@ require 'spec_helper'
 
 RSpec.describe "Static pages", :type => :request do
 
+  subject { page }
+
   describe "Home page" do
-    it "should have the h1 'Sample App'" do
-      visit '/static_pages/home'
-      #page.should have_h1('Sample App')
-      expect(page).to have_selector('h1', :text => 'Sample App')
-    end
 
-    it "should have the base title" do
-      visit '/static_pages/home'
-      expect(page).to have_title('TwEAter')
-    end
+    before { visit root_path }
+    
+    it { should have_selector('h1', text: 'TwEAter') }
+    it { should have_title('TwEAter') }
+    it { should_not have_title('|') }
+    # it "should have the h1 'TwEAter'" do
+    #   #page.should have_h1('Sample App')
+    #   expect(page).to have_selector('h1', text: 'TwEAter')
+    # end
 
-    it "should not have a custom page title" do
-      visit '/static_pages/home'
-      expect(page).to_not have_title('|')
-    end
+    # it "should have the base title" do
+    #   expect(page).to have_title('TwEAter')
+    # end
+
+    # it "should not have a custom page title" do
+    #   expect(page).to_not have_title('|')
+    # end
   end
 
   describe "Help page" do
-    it "should have the h1 'Help'" do
-      visit '/static_pages/help'
-      #page.should have_h1('Help')
-      expect(page).to have_selector('h1', :text => 'Help')
-    end
-    it "should have the base title" do
-      visit 'static_pages/help'
-      expect(page).to have_title("Help me help you.")
-    end
+    before { visit help_path }
+    it { should have_selector('h1', text: 'Help') }
+    it { should have_title("Help me help you.") }
   end
 
   describe "About page" do
-    it "should have the h1 'About us'" do
-      visit '/static_pages/about'
-      #page.should have_h1('About Us')
-      expect(page).to have_selector('h1', :text => 'About Us')
-    end
-    it "should have the base title" do
-      visit 'static_pages/about'
-      expect(page).to have_title("This is who I am.")
-    end
+    before { visit about_path }
+    it { should have_selector('h1', text: 'About Us') }
+    it { should have_title("This is who I am.") }
   end
 
   describe "Contact page" do
-    it "should have the h1 'Contact Me.'" do
-      visit '/static_pages/contact'
-      #page.should have_h1('About Us')
-      expect(page).to have_selector('h1', :text => 'Contact Me.')
-    end
-    it "should have the base title" do
-      visit 'static_pages/contact'
-      expect(page).to have_title("How to get a hold of me.")
-    end
+    before { visit contact_path }
+    it { should have_selector('h1', text: 'Contact Me.') }
+    it { should have_title("How to get a hold of me.") }
+  end
+
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "TwEAter"
+    expect(page).to have_selector('h1', text: 'Welcome to TwEAter :)')
+    # click_link "About"
+    # expect(page).to have_title('About Us')
+    click_link "Help"
+    expect(page).to have_title('Help')
+    click_link "Contact"
+    # expect(page).to have_title('Contact Me.')
+    click_link "Home"
+    click_link "Git yerself an account!"
+    # expect(page).to have_title('Sign up!')
   end
 
 end
