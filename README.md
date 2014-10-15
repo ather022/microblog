@@ -1,4 +1,4 @@
-# A Ruby on Rails sample application!
+# A Ruby on Rails based microblog app!
 + This was built with the help of Michael Hartl, and will evolve into something awesome... *eventually*.
 
 How super rad.
