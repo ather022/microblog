@@ -1,5 +1,6 @@
 # A Ruby on Rails based microblog app!
 + This was built with the help of Michael Hartl, and will evolve into something awesome... *eventually*.
+It's live on Heroku, feel free to check it out (I'm more than happy to send you the URL if need be).
 
 How super rad.
 --------------
